@@ -85,10 +85,10 @@ Analizando o código fornecido na aula, o efeito de tal modificação seria torn
 
 ### Autoavaliação
 
-1. **Qual a ideia do uso da recursão utilizada na programação do programa Labirinto?**
+1. **Qual a ideia do uso da recursão utilizada na programação do programa *Labirinto*?**
 
 No código original, a função de busca considera individualmente cada casa do tabuleiro: ela avança (se possível) para uma casa vizinha *v*, e, caso essa casa não seja o destino, chama novamente a função de busca em *v*. (Caso *v* seja o destino, a busca está obviamente concluída.) O algoritmo percorre todo o tabuleiro enquanto tais movimentos são possíveis, e retorna para a casa (função) anterior quando encontra um beco sem saída -- por isso é importante que a função de busca tente avançar para todos os vizinhos possíveis.
 
-2. **Na sua opinião, códigos que utilizam recursão são intuitivos? Você conseguiu entender facilmente o código recursivo do programa Labirinto?**
+2. **Na sua opinião, códigos que utilizam recursão são intuitivos? Você conseguiu entender facilmente o código recursivo do programa *Labirinto*?**
 
 Sim, o uso da recursão permite raciocinar sobre o funcionamento de um dado algoritmo em termos mais simples. Por exemplo, em uma busca sobre uma estrutura de árvore, basta escolher um dos filhos do nó raiz, e então retornar o resultado dessa mesma busca aplicada sobre o nó filho escolhido -- que é a raiz da sub-árvore considerada no próximo passo da busca. Ou seja, não é necessário explicitar como toda a busca se desenrola.
